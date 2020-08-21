@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>HTML Practice</title>
+</head>
+
+<body>
+    <!-- BASIC TABLE -->
+    <table border="1">
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Image</td>
+                <td>Type</td>
+                <td>Evolves To</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Bulbasaur</td>
+                <td><img src=http://img4.wikia.nocookie.net/__cb20140328190757/pokemon/images/thumb/2/21/001Bulbasaur.png/200px-001Bulbasaur.png></td>
+                <td>Grass/Poison</td>
+                <td><a href=http://pokemon.wikia.com/wiki/Ivysaur>Ivysaur</a></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <!-- BASIC REGISTRATION FORM -->
+    <h1>Register</h1>
+
+    <form>
+        <label for='fName'>First Name:</label>
+        <input id="fName" type="text" placeholder="John" required>
+        <label for='lName'>Last Name:</label>
+        <input id="lName" type="text" placeholder="Smith" required>
+
+        <div>
+            <label for='male'>Male:</label>
+            <input name='genderChoice' id='male' type='radio'>
+            <label for='female'>Female:</label>
+            <input name='genderChoice' id='female'type='radio'>
+            <label for='other'>Other:</label>
+            <input name='genderChoice' id='other'type='radio'>
+        </div>
+
+        <div>
+            <label for='email'>Email:</label>
+            <input id="email" type="email" placeholder="your email" required>
+            <label for="pword">Password:</label>
+            <input id="pword" type="password" minlength="5" maxlength="10" required>
+        </div>
+
+        <div>
+        <label for="bday">Birthday:</label>
+        <select id='bday' name="month">
+            <option>Month</option>
+            <option>January</option>
+            <option>Feb</option>
+            <option>March</option>
+        </select>
+        <select name="day">
+            <option>Day</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+        </select>
+        <select name="year">
+            <option>Year</option>
+            <option>2000</option>
+            <option>2001</option>
+            <option>2002</option>
+        </select>
+        </div>
+
+        <div>
+        <label for="terms">I agree to the terms and conditions</label>
+        <input id="terms" name='terms' type="checkbox" required>
+        </div>
+
+        <input type="Submit"> 
+    </form>
+
+    
+    
+    
+</body>
+
+</html>
