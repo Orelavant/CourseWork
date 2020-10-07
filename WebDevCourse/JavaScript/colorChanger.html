@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .color{
+                background-color:purple;
+            }
+        </style>
+    </head>
+    <body>
+        <button>CLICK ME!</button>
+        
+        <script>
+            var background = document.querySelector("body");
+            var button = document.querySelector("button").addEventListener("click", function(){
+                background.classList.toggle("color");
+            });
+        </script>
+    </body>
+</html>
